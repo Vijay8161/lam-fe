@@ -1,3 +1,13 @@
+/* src/index.css */
+/* @tailwind preflight; */
+@tailwind utilities;
+@import "tailwindcss";
+ 
+/* Add any custom styles here */
+/* body {
+  background-color: red !important;
+} */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +75,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} 
+
+.sign-in-button{
+  color : white;
+}
+
+.header-icon{
+  height: 30px;
+  width: 30px;
 }
