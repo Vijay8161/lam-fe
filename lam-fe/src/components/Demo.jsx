@@ -1,4 +1,3 @@
-// src/components/Demo.jsx
 import React from 'react';
 import Badge from './ui/Badge';
 

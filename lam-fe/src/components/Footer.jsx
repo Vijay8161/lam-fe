@@ -1,11 +1,13 @@
-// src/components/Footer.jsx
 import React from 'react';
 import { Brain, BookOpen, Github, Mail, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const loc= useLocation();
+  const isAuthPage = loc.pathname === '/authPage';
+  if(isAuthPage) return null;
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12 px-4">
+    <footer className="bg-slate-900 text-slate-300 py-5 px-4 rounded-t-2xl my-auto">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -101,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+        <div className="border-t border-slate-800 mt-8 pt-8 pb-0 text-center text-sm text-slate-400">
           <p>&copy; {new Date().getFullYear()} Legal-Med NER. All rights reserved.</p>
         </div>
       </div>

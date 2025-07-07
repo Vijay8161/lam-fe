@@ -1,7 +1,6 @@
-// src/components/Features.jsx
 import React from 'react';
 import { FileText, Target, Settings } from 'lucide-react';
-import Card from './ui/Card';
+import { Card } from './ui/Card';
 
 const Features = () => {
   return (
@@ -53,6 +52,9 @@ const Features = () => {
             <p className="text-center text-slate-600 leading-relaxed">
               Adapt and fine-tune the model for specific use cases, terminology, and organizational requirements
               with our flexible training pipeline.
+            </p>
+            <p className="font-bold text-center text-slate-600 leading-relaxed">
+              *For more info Check our <a href="#">Use-Cases</a>
             </p>
           </Card>
         </div>

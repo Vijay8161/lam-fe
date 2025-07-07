@@ -1,6 +1,6 @@
-// src/components/Hero.jsx
 import React from 'react';
-import { Brain, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import Button from './ui/Button';
 import Badge from './ui/Badge';
 
@@ -20,10 +20,12 @@ const Hero = () => {
           unprecedented accuracy and speed.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-            Try Demo
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/demoPage">
+               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                  Try Demo
+                  <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+          </Link>
           <Button variant="outline" size="lg" className="px-8 py-3 bg-transparent">
             View Documentation
           </Button>

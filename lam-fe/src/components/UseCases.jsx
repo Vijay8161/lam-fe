@@ -1,4 +1,3 @@
-// src/components/UseCases.jsx
 import React from 'react';
 import { FileText, Target, CheckCircle } from 'lucide-react';
 import Badge from './ui/Badge';

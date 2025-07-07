@@ -1,26 +1,32 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Demo from './components/Demo';
-import UseCases from './components/UseCases';
-import CTA from './components/CTA';
 import Footer from './components/Footer';
+import HomePage from './components/pages/HomePage';
+import DemoPage from './components/pages/DemoPage';
+import AuthPage from './components/pages/AuthPage';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Demo />
-        <UseCases />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    // <p>hello</p>
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/demoPage" element={<DemoPage />} />
+            <Route path="/authPage" element={<AuthPage />} />
+            <Route path="*" element={<h1>404 - Not Found</h1>} />
+            <Route path="/errorPage" element={<h1>Under Maintenance</h1>} />
+          </Routes>
+        </main>
+        <Footer />
+      </div> 
+    </Router>
   );
 }
 
