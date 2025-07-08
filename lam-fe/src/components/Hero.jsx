@@ -26,9 +26,11 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
           </Link>
-          <Button variant="outline" size="lg" className="px-8 py-3 bg-transparent">
-            View Documentation
-          </Button>
+          <Link to="/docsPage">
+              <Button variant="outline" size="lg" className="px-8 py-3 bg-transparent">
+                View Documentation
+              </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { cn } from '../../lib/utils';
+// import { cn } from '../../lib/utils';
+import { clsx } from "clsx"; 
 
 const Badge = ({ children, variant = 'default', className, ...props }) => {
   const variants = {
@@ -11,7 +12,7 @@ const Badge = ({ children, variant = 'default', className, ...props }) => {
 
   return (
     <span
-      className={cn(
+      className={clsx(
         'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
         variants[variant],
         className

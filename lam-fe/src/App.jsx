@@ -7,6 +7,8 @@ import DemoPage from './components/pages/DemoPage';
 import AuthPage from './components/pages/AuthPage';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
+import DocumentationPage from './components/pages/DocumentationPage';
+import ContactUsPage from './components/pages/ContactusPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/demoPage" element={<DemoPage />} />
             <Route path="/authPage" element={<AuthPage />} />
+            <Route path="/docsPage" element={<DocumentationPage />} />
+            <Route path="/contactusPage" element={<ContactUsPage />} />
             <Route path="*" element={<h1>404 - Not Found</h1>} />
             <Route path="/errorPage" element={<h1>Under Maintenance</h1>} />
           </Routes>

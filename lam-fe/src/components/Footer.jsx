@@ -50,7 +50,7 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="#" className="hover:text-blue-400 transition-colors flex items-center gap-2">
+                <Link to="/docsPage" className="hover:text-blue-400 transition-colors flex items-center gap-2">
                   <BookOpen className="h-4 w-4" />
                   Docs
                 </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:text-blue-400 transition-colors flex items-center gap-2">
+                <Link to="/contactusPage" className="hover:text-blue-400 transition-colors flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   Contact
                 </Link>

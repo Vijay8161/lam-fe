@@ -79,6 +79,12 @@ button:focus-visible {
 
 .sign-in-button{
   color : white;
+  background-color :black;
+}
+
+.sign-in-button:hover{
+  color:black;
+  background-color :white;
 }
 
 .header-icon{

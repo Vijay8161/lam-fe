@@ -31,8 +31,11 @@ const Header = () => {
           <Link to="#use-cases" className="text-slate-600 hover:text-blue-600 transition-colors">
             Use Cases
           </Link>
+          <Link to="/contactusPage" className="text-slate-600 hover:text-blue-600 transition-colors">
+            Contact Us
+          </Link>
           <Link to="/authPage" className="flex items-center text-slate-600 hover:text-blue-600 transition-colors group">
-            <Button variant="outline" size="sm" className="sign-in-button bg-black-600">Sign-in</Button>
+            <Button variant="outline" size="sm" className="bg-black text-white hover:bg-white hover:text-black ">Sign-in</Button>
           </Link>
         </nav>
       </div>
