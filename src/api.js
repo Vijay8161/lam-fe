@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: 'http://localhost:3000/api',
   withCredentials: true // For cookies/sessions
 });
+
 
 // Auth API
 export const login = (userData) => API.post('/auth/login', userData);

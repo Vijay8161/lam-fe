@@ -6,10 +6,19 @@ import { AuthForm } from "../auth/AuthForm"
 export default function AuthPage() {
   const [isSignUp, setIsSignUp] = useState(false)
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log(`${isSignUp ? "Sign up" : "Sign in"} form submitted`)
-  }
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try{
+  //     const { data } = isSignUp
+  //     ? await login(formData)
+  //     : await register(formData);
+  //     setUser(data);
+  //     Navigate('/');
+  //   } catch(err){
+  //     setError(err.response?.data?.message || 'An error occured');
+  //   }
+  //   console.log(`${isSignUp ? "Sign up" : "Sign in"} form submitted`)
+  // }
 
   const handleSocialAuth = (provider) => {
     console.log(`${provider} authentication`)
@@ -45,7 +54,7 @@ export default function AuthPage() {
               <AuthForm 
                 isSignUp={isSignUp}
                 setIsSignUp={setIsSignUp}
-                handleSubmit={handleSubmit}
+                // handleSubmit={handleSubmit}
                 handleSocialAuth={handleSocialAuth}
               />
             </CardContent>

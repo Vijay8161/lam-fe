@@ -7,6 +7,7 @@ import { clsx } from "clsx";
 function Input({
   className,
   type,
+  hasError,
   ...props
 }) {
   return (
